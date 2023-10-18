@@ -1,0 +1,12 @@
+# Use an official Jupyter Notebook image as the base image
+FROM jupyter/base-notebook
+
+# Copy your Jupyter Notebook file into the image
+COPY my_notebook.ipynb /home/jovyan/work/
+
+# You can add additional dependencies if needed
+# For example, to install a Python library:
+# RUN pip install pandas
+
+# Set the working directory
+WORKDIR /home/jovyan/work/
