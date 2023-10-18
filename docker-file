@@ -2,7 +2,7 @@
 FROM jupyter/base-notebook
 
 # Copy your Jupyter Notebook file into the image
-COPY my_notebook.ipynb /home/jovyan/work/
+COPY Flight_Price_Prediction.ipynb /home/jovyan/work/
 
 # You can add additional dependencies if needed
 # For example, to install a Python library:
